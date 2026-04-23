@@ -5,38 +5,15 @@
     class="documento-html"
     id="raiz-html"
     title="Noticia sobre IA en desarrollo web"
-    data-version="1.0">
-    <!-- html: raíz del documento -->
-    <!-- lang: idioma principal -->
-    <!-- dir: dirección del texto -->
-    <!-- class / id: identificación para CSS o JS -->
-    <!-- title: información adicional -->
-    <!-- data-* : datos personalizados -->
+    data-version="2.0">
 
 <head>
-    <!-- head: metadatos del documento -->
-
     <meta charset="UTF-8">
-    <!-- meta con charset: codificación de caracteres -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- meta con name + content: configuración responsive -->
-
     <meta name="description" content="Noticia sobre la nueva IA WebCreaAI.">
-    <!-- meta con description: descripción del documento -->
-
     <meta name="author" content="Ana López">
-    <!-- meta con author: autor del documento -->
-
     <meta name="keywords" content="IA, WebCrearIA, DesarrolloWeb">
-    <!-- meta con keywords: palabras clave -->
-
-    <!-- <meta http-equiv="refresh" content="120"> -->
-    <!-- meta con http-equiv: directiva del navegador -->
-
     <title>Nueva IA revoluciona el desarrollo web</title>
-    <!-- title: título de la pestaña -->
-
 </head>
 
 <body
@@ -45,93 +22,65 @@
     lang="es"
     title="Cuerpo del documento"
     data-seccion="noticia">
-    <!-- body: todo el contenido visible -->
 
-    <header
-        id="encabezado"
-        class="site-header"
-        title="Encabezado principal"
-        data-rol="header">
-        <!-- header: contenido introductorio -->
+    <main id="inicio" class="contenido-principal" data-layout="principal">
 
-        <h1 id="titulo-principal" class="titulo">Nueva IA revoluciona el desarrollo web</h1>
-        <p id="bajada" class="descripcion">
-            15 de mayo 2024 / Por Ana López
-        </p>
-    </header>
-    <figure
-                    id="figura-ia"
->
-                    <!-- figure: contenido autónomo ilustrativo -->
+        <article id="articulo-html" class="noticia" aria-labelledby="titulo-articulo-1">
+            
+            <header id="encabezado" class="site-header" title="Encabezado principal" data-rol="header">
+                <h1 id="titulo-principal" class="titulo">Nueva IA revoluciona el desarrollo web</h1>
+                <p id="subtitulo" class="descripcion">
+                    15 de mayo 2024 / Por Ana López
+                </p>
+            </header>
 
-                    <img
-                        id="imagen-ia"
-                        class="imagen"
-                        src="IA.jpeg"
-                        alt="IA"
-                        width="600"
-                        height="500"
-                        loading="lazy"
-                        decoding="async"
-                        title="IA">
-                    <!-- img: imagen -->
-                    <!-- src: ruta -->
-                    <!-- alt: texto alternativo -->
-                    <!-- width / height: dimensiones -->
-                    <!-- loading: carga diferida -->
-                    <!-- decoding: modo de decodificación -->
-                    <!-- referrerpolicy / crossorigin: política de solicitud -->
+            <figure id="figura-ia">
+                <img
+                    id="imagen-ia"
+                    class="imagen"
+                    src="IA.jpeg"
+                    alt="Robot de inteligencia artificial programando en una computadora"
+                    width="600"
+                    height="500"
+                    loading="lazy"
+                    decoding="async"
+                    title="Robot de inteligencia artificial programando">
+                <figcaption id="caption-html">
+                    Una innovadora inteligencia artificial promete
+                    cambiar la forma en qué se crean los sitios web.
+                </figcaption>
+            </figure>
 
-                    <figcaption id="caption-html">
-                        Una innovadora inteligencia artificial promete
-                        cambiar la forma en qué se crean los sitios web.
-                    </figcaption>
-                    <!-- figcaption: leyenda de la figura -->
-                </figure>
-
-    <main
-        id="inicio"
-        class="contenido-principal"
-        data-layout="principal">
-        <!-- main: contenido principal único del documento -->
-
-        <section
-            id="noticias"
-            class="bloque-noticias"
-            aria-labelledby="titulo-noticias"
-            title="Sección de noticias">
-            <!-- section: sección temática -->
-
-            <article
-                id="articulo-html"
-                class="noticia"
-                aria-labelledby="titulo-articulo-1"
-                >
-                <!-- article: contenido independiente -->
-
+            <section id="noticias" class="bloque-noticias" title="Sección de noticias">
                 <p>
                     Una nueva IA llamada <strong>"WebCreaAI"</strong> ha sido lanzada al mercado, prometiendo acelerar y simplificar el proceso de desarrollo web.
                 </p>
                 
-               <ul>
+                <ul>
                     <li>Generación automática de código</li>
                     <li>Optimización para SEO</li>
                     <li>Adaptación a dispositivos móviles</li>
                 </ul>
-        </section>
-        <aside
-                id="barra-lateral"
-                class="contenido-secundario"
-                aria-labelledby="titulo-aside"
-                title="Dato interesante">
+            </section>
+
+            <aside id="barra-lateral" class="contenido-secundario" aria-labelledby="titulo-aside" title="Dato interesante">
                 <h3 id="titulo-aside">Dato interesante</h3>
                 <p>
                     El 70% de los sitios web todavía no están optimizados para móviles.
                 </p>
-        </aside>
+            </aside>
+
             <footer class="pie-articulo">
                 <h3 id="titulo-comentarios">¿Qué opinas sobre esta nueva IA para el desarrollo web?</h3>
                 <button type="button">¡Déjanos tu comentario!</button>
+
+                <br><br>
+
+                <form action="#" method="POST" id="form-suscripcion">
+                    <label for="email-user">Suscríbete a nuestro newsletter:</label>
+                    <input type="email" id="email-user" name="correo" required placeholder="tu@email.com">
+                    <button type="submit">Suscribirme</button>
+                </form>
             </footer>
 
         </article>
@@ -139,3 +88,4 @@
     </main>
 
 </body>
+</html>
